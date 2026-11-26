@@ -28,9 +28,7 @@ from datetime import datetime
 
 # 1. CHEMINS DU PROJET
 
-DOSSIER_BASE = Path(
-    r"C:\Users\zaher\OneDrive\Desktop\Base_Donnees_Tambours_MTV9"
-)
+DOSSIER_BASE = Path(__file__).resolve().parents[1] / "data"
 
 DOSSIER_CALIBRATION = DOSSIER_BASE / "Calibration_ROI_Seuils"
 FICHIER_ROI = DOSSIER_CALIBRATION / "rois_calibration.json"
