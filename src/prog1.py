@@ -27,9 +27,7 @@ from datetime import datetime
 
 # 1. CHEMINS DES DOSSIERS
 
-DOSSIER_BASE = Path(
-    r"C:\Users\zaher\OneDrive\Desktop\Base_Donnees_Tambours_MTV9"
-)
+DOSSIER_BASE = Path(__file__).resolve().parents[1] / "data"
 
 DOSSIER_ENTREE_AVANT = DOSSIER_BASE / "Face_Avant"
 
