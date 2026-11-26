@@ -70,6 +70,12 @@ The proposed configuration includes:
 
 The optical design was based on the relationship between sensor dimensions, focal length, working distance and field of view.
 
+### Proposed System Architecture
+
+![System Architecture](figures/system_architecture.png)
+
+*Figure 1 — Proposed dual-camera industrial inspection system with controlled illumination.*
+
 ## 2. Image Preprocessing
 
 The first Python program prepares raw images for subsequent analysis.
@@ -96,7 +102,17 @@ The first Python program prepares raw images for subsequent analysis.
 
 The objective is to reduce variations caused by the initial positioning of the component.
 
-<!-- Authorized preprocessing illustrations can be added here. -->
+### Front-Side Image Preprocessing
+
+![Front Side](figures/front_before_after.png)
+
+*Figure 2 — Original image and normalized front-side image after circular detection, masking and centering.*
+
+### Rear-Side Image Preprocessing
+
+![Rear Side](figures/rear_before_after.png)
+
+*Figure 3 — Background removal and spatial normalization of the rear-side image.*
 
 ## 3. ROI Calibration and Feature Extraction
 
@@ -120,7 +136,11 @@ Reference measurements are established using available conforming samples.
 
 The calibration data and extracted features are stored in CSV and JSON files.
 
-<!-- Authorized ROI calibration illustrations can be added here. -->
+### Interactive ROI Calibration
+
+![ROI Calibration](figures/roi_calibration.png)
+
+*Figure 4 — Interactive selection of Regions of Interest for localized feature extraction and statistical analysis.*
 
 ## 4. Automated Inspection Prototype
 
